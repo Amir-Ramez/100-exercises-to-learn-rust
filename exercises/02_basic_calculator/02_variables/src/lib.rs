@@ -8,6 +8,10 @@
 pub fn speed(start: u32, end: u32, time_elapsed: u32) -> u32 {
     // TODO: define a variable named `distance` with the right value to get tests to pass
     //  Do you need to annotate the type of `distance`? Why or why not?
+    //  no because (end) and (start) are both u32, so Rust automatically knows that the type of
+    //  distance is u32 too
+
+    let distance = end - start;
 
     // Don't change the line below
     distance / time_elapsed
