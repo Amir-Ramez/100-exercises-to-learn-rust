@@ -60,7 +60,7 @@ impl Order {
     }
 
     pub fn set_unit_price(&mut self, unit_price: u32) {
-        validate_quantity(unit_price);
+        validate_unit_price(unit_price);
         self.unit_price = unit_price
     }
 }
